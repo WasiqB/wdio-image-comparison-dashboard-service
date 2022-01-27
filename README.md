@@ -1,0 +1,1 @@
+# wdio-image-comparison-dashboard-service
