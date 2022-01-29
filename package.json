@@ -1,0 +1,26 @@
+{
+  "name": "wdio-image-comparison-dashboard-service",
+  "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "postinstall": "husky install",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "format": "prettier --write '**/*.{ts,tsx}'",
+    "check-format": "prettier --check '**/*.{ts,tsx}'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check-format && npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}
